@@ -427,6 +427,8 @@ project-by-imtudev/
 
 This project is open source and available under the **MIT License**. You are free to use, modify, and distribute it for personal or commercial purposes. See the [`LICENSE`](./LICENSE) file for the full text.
 
+Made for those who contributes in project in their daily life.
+
 ---
 
 <div align="center">Built with ❤️ by <strong>ImtuDev</strong></div>
