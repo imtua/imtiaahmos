@@ -23,5 +23,5 @@ As you can see in the picture given above, i created the base. There will be a d
 ![2](assets/Readme/2.png)
 
 Now, I created the **windowManager.js**. It's crucial cause while using the OS and its features, the OS creates Windows. Although we haven't designed the OS or styled it yet, it's so important, cause without it, i can't create any windows. 
-So, now I'll create the **style.js** file.
+So, now I'll create the **style.css** file.
 
