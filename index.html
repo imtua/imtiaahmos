@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="USF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=" 1.0">
+    <title>ImtOS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/windows.css">
+</head>
+
+<body>
+    <div id="desktop-wallpaper" style="background-image:url('assets/wallpaper.jpg');"></div>
+    <div id="wallpaper-overlay"></div>
+
+    <header id="top-bar">
+        <div class="top-bar-left">
+            <span class="system-title">ImtOS</span>
+            <span class="system-status">Corporate Studio</span>
+        </div>
+        <div class="top-bar-center">
+            <span id="system-clock">00.00AM</span>
+        </div>
+        <div class="top-bar-right">
+            <span class="status-badge">Online</span>
+        </div>
+    </header>
+
+    <main id="desktop-canvas"></main>
+
+    <div id="app-menu" class="hidden">
+        <div class="menu-header">
+            <span class="menu-title">ImtOS Application</span>
+            <span class="menu-subtitle">Studio System v1.0</span>
+        </div>
+
+        <div class="menu-grid">
+            <div class="app-menu-card" data-app="gallery">
+                <img src="assets/icons/gallery.svg" class="app-svg-icon" alt="Gallery" />
+                <span class="app-label">Gallery</span>
+            </div>
+
+            <div class="app-menu-card" data-app="calculator">
+                <img src="assets/icons/calculator.svg" class="app-svg-icon" alt="Calculator" />
+                <span class="app-label">Calculator</span>
+            </div>
+
+            <div class="app-menu-card" data-app="mediaplayer">
+                <img src="assets/icons/media-player.svg" class="app-svg-icon" alt="Media Player" />
+                <span class="app-label">Contact</span>
+            </div>
+
+            <div class="app-menu-card" data-app="terminal">
+                <img src="assets/icons/terminal.svg" class="app-svg-icon" alt="Terminal (CLI)" />
+                <span class="app-label">Terminal (CLI)</span>
+            </div>
+        </div>
+    </div>
+
+    <nav id="floating-dock">
+        <button class="dock-item" data-app="terminal" title="Terminal (CLI)" <img src="assets/icons/terminal.svg"
+            alt="Terminal" class="dock-icon" width="24" height="24">
+            <span class="dock-tooltip">Terminal (CLI)</span>
+        </button>
+
+        <button class="dock-item" data-app="gallery" title="Gallery" <img src="assets/icons/gallery.svg" alt="Gallery"
+            class="dock-icon" width="24" height="24">
+            <span class="dock-tooltip">Gallery</span>
+        </button>
+
+        <button class="dock-item" data-app="calculator" title="Calculator" <img src="assets/icons/calculator.svg"
+            alt="Calculator" class="dock-icon" width="24" height="24">
+            <span class="dock-tooltip">Calculator</span>
+        </button>
+
+        <button class="dock-item" data-app="mediaplayer" title="Media Player" <img src="assets/icons/media-player.svg"
+            alt="Media Player" class="dock-icon" width="24" height="24">
+            <span class="dock-tooltip">Media Player</span>
+        </button>
+    </nav>
+
+    <button id="app-launcher-btn" title="Open Applications Menu">
+        <svg width="26" height="" 26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse>
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"></ellipse>
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse>
+            <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+        </svg>
+    </button>
+
+    <div id="app-menu" class="hidden">
+    </div>
+
+    <script src="js/windowManager.js"></script>
+    <script src="js/apps/terminal.js"></script>
+    <script src="js/apps/gallery.js"></script>
+    <script src="js/apps/calculator.js"></script>
+    <script src="js/apps/mediaplayer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
