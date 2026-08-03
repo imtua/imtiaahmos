@@ -3,7 +3,7 @@ Using ImtOS, you can easily get to know me! That starts now!
 
 Day-1, Aug 4, 2026.
 
-Log-1, Hackatime Coding Session: 13Minutes
+Log-1, Hackatime Coding Session: 19Minutes
 
 ![1](assets/Readme/1.png)
 
@@ -16,7 +16,7 @@ They are
 
 As you can see in the picture given above, i created the base. There will be a dock with 4 svg icons that represents those 4 applications. There will also be an atom icon which I made myself will work as an application centre. In the next mission, I'm thinking of adding more features without bothering the dock, so those apps will go here.
 
-Log-2, Hackatime Coding Session: 26Minutes
+Log-2, Hackatime Coding Session: 21Minutes
 
 ![2](assets/Readme/2.png)
 
