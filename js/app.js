@@ -26,13 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     console.error('initCalculatorApp function not found! Check script order.');
                 }
-            } else if (appType === 'logbook') {
-                if (typeof window.initLogbookApp === 'function') {
-                    window.initLogbookApp();
-                }
-            } else if (appType === 'widgets') {
-                if (typeof window.initWidgetsApp === 'function') {
-                    window.initWidgetsApp();
+            } else if (appType === 'gallery') {
+                if (typeof window.initGalleryApp === 'function') {
+                    window.initGalleryApp();
+                } else {
+                    console.error('initGalleryApp function not found! Check script order.');
                 }
             } else if (appType === 'mediaplayer') {
                 if (typeof window.initMediaPlayerApp === 'function') {

@@ -49,3 +49,9 @@ Whatever, use it or don't, this feature is awesome (pls say yes).
 
 Trust me this took way more than 6 minutes. I kinda hate texts, so i replaced the text buttons with SVG files. Nothing else. Now, time to do the gallery one.
 
+**Log-6, Hackatime Coding Session: 55Minutes**
+
+![7](assets/Readme/7.png)
+
+This took way more than 55 Minutes, like collecting the photos and arranging them, designing the whole gallery.
+Whatever, here you go, now you can have a watch on the owner of ImtOS and his nice lovely photographys.
