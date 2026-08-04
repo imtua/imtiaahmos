@@ -12,35 +12,35 @@ window.initCalculatorApp = function () {
 
       <!-- Keypad Grid -->
       <div class="calc-grid">
-        <button class="calc-btn action" data-action="clear">C</button>
-        <button class="calc-btn action" data-action="parentheses">( )</button>
-        <button class="calc-btn action" data-action="backspace">⌫</button>
-        <button class="calc-btn op" data-val="/">÷</button>
+        <button class="calc-btn action" data-action="clear"><img src="assets/icons/calculator/clear.svg" alt="Clear"></button>
+        <button class="calc-btn action" data-action="parentheses"><img src="assets/icons/calculator/parentheses.svg" alt="Parentheses"></button>
+        <button class="calc-btn action" data-action="backspace"><img src="assets/icons/calculator/backspace.svg" alt="Backspace"></button>
+        <button class="calc-btn op" data-val="/"><img src="assets/icons/calculator/divide.svg" alt="Divide"></button>
 
-        <button class="calc-btn num" data-val="7">7</button>
-        <button class="calc-btn num" data-val="8">8</button>
-        <button class="calc-btn num" data-val="9">9</button>
-        <button class="calc-btn op" data-val="*">×</button>
+        <button class="calc-btn num" data-val="7"><img src="assets/icons/calculator/7.svg" alt="7"></button>
+        <button class="calc-btn num" data-val="8"><img src="assets/icons/calculator/8.svg" alt="8"></button>
+        <button class="calc-btn num" data-val="9"><img src="assets/icons/calculator/9.svg" alt="9"></button>
+        <button class="calc-btn op" data-val="*"><img src="assets/icons/calculator/multiply.svg" alt="Multiply"></button>
 
-        <button class="calc-btn num" data-val="4">4</button>
-        <button class="calc-btn num" data-val="5">5</button>
-        <button class="calc-btn num" data-val="6">6</button>
-        <button class="calc-btn op" data-val="-">−</button>
+        <button class="calc-btn num" data-val="4"><img src="assets/icons/calculator/4.svg" alt="4"></button>
+        <button class="calc-btn num" data-val="5"><img src="assets/icons/calculator/5.svg" alt="5"></button>
+        <button class="calc-btn num" data-val="6"><img src="assets/icons/calculator/6.svg" alt="6"></button>
+        <button class="calc-btn op" data-val="-"><img src="assets/icons/calculator/minus.svg" alt="Subtract"></button>
 
-        <button class="calc-btn num" data-val="1">1</button>
-        <button class="calc-btn num" data-val="2">2</button>
-        <button class="calc-btn num" data-val="3">3</button>
-        <button class="calc-btn op" data-val="+">+</button>
+        <button class="calc-btn num" data-val="1"><img src="assets/icons/calculator/1.svg" alt="1"></button>
+        <button class="calc-btn num" data-val="2"><img src="assets/icons/calculator/2.svg" alt="2"></button>
+        <button class="calc-btn num" data-val="3"><img src="assets/icons/calculator/3.svg" alt="3"></button>
+        <button class="calc-btn op" data-val="+"><img src="assets/icons/calculator/plus.svg" alt="Add"></button>
 
-        <button class="calc-btn num" data-val="0">0</button>
-        <button class="calc-btn num" data-val=".">.</button>
-        <button class="calc-btn action" data-action="percent">%</button>
-        <button class="calc-btn equals" data-action="equals">=</button>
+        <button class="calc-btn num" data-val="0"><img src="assets/icons/calculator/0.svg" alt="0"></button>
+        <button class="calc-btn num" data-val="."><img src="assets/icons/calculator/dot.svg" alt="Decimal"></button>
+        <button class="calc-btn action" data-action="percent"><img src="assets/icons/calculator/percent.svg" alt="Percent"></button>
+        <button class="calc-btn equals" data-action="equals"><img src="assets/icons/calculator/equal.svg" alt="Equals"></button>
       </div>
     </div>
   `;
 
-    wm.createWindow('calculator', 'BODMAS Calculator', calcHTML, { width: '340px', height: '460px' });
+    wm.createWindow('calculator', 'Calculator', calcHTML, { width: '340px', height: '460px' });
 
     setTimeout(() => {
         const mainDisplay = document.getElementById('calc-main');

@@ -42,3 +42,10 @@ As you can see in the given picture above, the calculator looks hella odd. I cre
 This worked. Now, you may be thinking that why are you gonna use the calculator function in ImtOS when you have a calculator in your hand or calculator app in your device. This is a great question to think. So great even idk the answer.
 
 Whatever, use it or don't, this feature is awesome (pls say yes).
+
+**Log-5, Hackatime Coding Session: 6Minutes**
+
+![6](assets/Readme/6.png)
+
+Trust me this took way more than 6 minutes. I kinda hate texts, so i replaced the text buttons with SVG files. Nothing else. Now, time to do the gallery one.
+
