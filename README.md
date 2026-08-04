@@ -25,3 +25,11 @@ As you can see in the picture given above, i created the base. There will be a d
 Now, I created the **windowManager.js**. It's crucial cause while using the OS and its features, the OS creates Windows. Although we haven't designed the OS or styled it yet, it's so important, cause without it, i can't create any windows. 
 So, now I'll create the **style.css** file.
 
+**Log - 3, Hackatime Coding Session: 39Minutes**
+
+![3](assets/Readme/3.png)
+
+I've created the **style.css** file and designed the dock and the application centre. I also designed the top header that says ImtOS - Corporate Studio and how it'd react. That's it all in **style.css**, now it's time to create some actual apps. Starting with the **calculator** app.
+
+
+
