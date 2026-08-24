@@ -36,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof window.initMediaPlayerApp === 'function') {
                     window.initMediaPlayerApp();
                 }
+            } else if (appType === 'widgets') {
+                if (typeof window.initWidgetsApp === 'function') {
+                    window.initWidgetsApp();
+                }
             }
         });
     });

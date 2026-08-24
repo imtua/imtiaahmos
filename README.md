@@ -124,4 +124,18 @@ I also added a gallery app, that features my 2 album, one named Imtiaz and other
 
 ## Time Spent on ImtOS: 5Hour 56Minutes
 
-Thanks Hack Club.
+# ImtOS V2 by Imtiaz Ahmed
+
+**Log-9, Hackatime Coding Session: 121Minutes**
+
+![10](assets/Readme/10.png)
+
+So, here I am on the next mission of Stardance and It's WebOS2! I'm so happy my project got approved and this is me doing it again. So, In this log, I made a widget on ImtOS as you can see in the picture above. 
+
+I added 4 things. They are-
+- **Time And Date** - shows real time date and time.
+- **System Metrics** - They're just dumb data but they at least shows something instead of nothing, lol.
+- **Quick Memo** - you can add quick memos here.
+- **Quote** - Best quote of Doom that I liked, wow he's so cool.
+
+make sure to check out, my next idea is to create a tic tac toe game in ImtOS!
