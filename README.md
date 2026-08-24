@@ -123,7 +123,7 @@ I also added a gallery app, that features my 2 album, one named Imtiaz and other
 
 # ImtOS V2 by Imtiaz Ahmed
 
-**Log-9, Hackatime Coding Session: 121Minutes**
+## Log-9, Hackatime Coding Session: 121Minutes
 
 ![10](assets/Readme/10.png)
 
