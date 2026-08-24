@@ -138,4 +138,10 @@ I added 4 things. They are-
 - **Quick Memo** - you can add quick memos here.
 - **Quote** - Best quote of Doom that I liked, wow he's so cool.
 
-make sure to check out, my next idea is to create a tic tac toe game in ImtOS!
+make sure to check out, my next idea is to create a guess the number game in ImtOS!
+
+**Log-10, Hackatime Coding Session: 63Minutes**
+
+![11](assets/Readme/11.png)
+
+Here we go with the **Guess the Number** game. Here, you'll be given 10 chances to guess a number from 1 to 100 and the AI will give you hints if the number is higher or lower or spot on. So, try it in ImtOS!
