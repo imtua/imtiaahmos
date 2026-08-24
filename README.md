@@ -72,7 +72,7 @@ As you can see, I added terminal and some easter eggs like this cat giving the t
 Here, it ends our journey in only 2 days making ImtOS that can represent me, yo!
 
 
-# Conclusion
+## Conclusion
 
 Here, we get our ImtOS made by me, Imtiaz Ahmed. I made this project as a mission of Hack Club Stardance named WebOS1. In the next mission, I'll add more games and features in ImtOS, that can make it standup.
 I used my favourite picture as the wallpaper of ImtOS, so that's a good thing. I also kept it MacOS aesthetics type, even though i use Ubuntu.
