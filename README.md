@@ -1,4 +1,4 @@
-# ImtOS by Imtiaz Ahmed
+# ImtOS V1 by Imtiaz Ahmed
 
 Yo, It's Imtiaz Ahmed, 15, building **ImtOS**, which is basically a WebOS that can be run on browser.
 Using ImtOS, you can easily get to know me! That starts now!
@@ -71,10 +71,50 @@ As you can see, I added terminal and some easter eggs like this cat giving the t
 
 Here, it ends our journey in only 2 days making ImtOS that can represent me, yo!
 
+# ImtOS V2 by Imtiaz Ahmed
+
+## Log-9, Hackatime Coding Session: 121Minutes
+
+![10](assets/Readme/10.png)
+
+So, here I am on the next mission of Stardance and It's WebOS2! I'm so happy my project got approved and this is me doing it again. So, In this log, I made a widget on ImtOS as you can see in the picture above. 
+
+I added 4 things. They are-
+- **Time And Date** - shows real time date and time.
+- **System Metrics** - They're just dumb data but they at least shows something instead of nothing, lol.
+- **Quick Memo** - you can add quick memos here.
+- **Quote** - Best quote of Doom that I liked, wow he's so cool.
+
+make sure to check out, my next idea is to create a guess the number game in ImtOS!
+
+## Log-10, Hackatime Coding Session: 63Minutes
+
+![11](assets/Readme/11.png)
+
+Here we go with the **Guess the Number** game. Here, you'll be given 10 chances to guess a number from 1 to 100 and the AI will give you hints if the number is higher or lower or spot on. So, try it in ImtOS!
+
+## Log-11, Hackatime Coding Session: 33Minutes
+
+![12](assets/Readme/12.png)
+
+Here we go again with the **Tic Tac Toe** game. This is a tough one cause the cpu will always do the best move but there's also a plus point for the player coz the player will always do the first move.
+
+## Log-12, Hackatime Coding Session: 56Minutes
+
+![13](assets/Readme/13.png)
+
+Now, you can find me through my own made OS!
+Pretty funny and interesting at the same time, taina? Well, it's cool too.
+
+## Log-13, Hackatime Coding Session: 150Minutes
+
+![14](assets/Readme/14.png)
+
+In this log, i polished off some things and mainly made 2 apps, they are Logbook and Showcase, feel free to check them.
 
 ## Conclusion
 
-Here, we get our ImtOS made by me, Imtiaz Ahmed. I made this project as a mission of Hack Club Stardance named WebOS1. In the next mission, I'll add more games and features in ImtOS, that can make it standup.
+Here, we get our ImtOS made by me, Imtiaz Ahmed. I made this project as a mission of Hack Club Stardance named WebOS1 and WebOS2. In the next mission, I'll add more games and features in ImtOS, that can make it standup.
 I used my favourite picture as the wallpaper of ImtOS, so that's a good thing. I also kept it MacOS aesthetics type, even though i use Ubuntu.
 
 I tried to keep some easter eggs here, as in terminal,
@@ -119,40 +159,6 @@ make sure to listen to them, they are my favs!
 
 I also added a gallery app, that features my 2 album, one named Imtiaz and other named Photographys. Make sure to check em.
 
-**Time Spent on ImtOS: 5Hour 56Minutes**
+**Time Spent on ImtOS: 10Hours+**
 
-# ImtOS V2 by Imtiaz Ahmed
-
-## Log-9, Hackatime Coding Session: 121Minutes
-
-![10](assets/Readme/10.png)
-
-So, here I am on the next mission of Stardance and It's WebOS2! I'm so happy my project got approved and this is me doing it again. So, In this log, I made a widget on ImtOS as you can see in the picture above. 
-
-I added 4 things. They are-
-- **Time And Date** - shows real time date and time.
-- **System Metrics** - They're just dumb data but they at least shows something instead of nothing, lol.
-- **Quick Memo** - you can add quick memos here.
-- **Quote** - Best quote of Doom that I liked, wow he's so cool.
-
-make sure to check out, my next idea is to create a guess the number game in ImtOS!
-
-## Log-10, Hackatime Coding Session: 63Minutes
-
-![11](assets/Readme/11.png)
-
-Here we go with the **Guess the Number** game. Here, you'll be given 10 chances to guess a number from 1 to 100 and the AI will give you hints if the number is higher or lower or spot on. So, try it in ImtOS!
-
-## Log-11, Hackatime Coding Session: 33Minutes
-
-![12](assets/Readme/12.png)
-
-Here we go again with the **Tic Tac Toe** game. This is a tough one cause the cpu will always do the best move but there's also a plus point for the player coz the player will always do the first move.
-
-## Log-12, Hackatime Coding Session: 56Minutes
-
-![13](assets/Readme/13.png)
-
-Now, you can find me through my own made OS!
-Pretty funny and interesting at the same time, taina? Well, it's cool too.
-
+Made by **Imtiaz Ahmed** with <a href="hackclub.com"><b>Hack Club</b></a>
