@@ -142,3 +142,17 @@ make sure to check out, my next idea is to create a guess the number game in Imt
 ![11](assets/Readme/11.png)
 
 Here we go with the **Guess the Number** game. Here, you'll be given 10 chances to guess a number from 1 to 100 and the AI will give you hints if the number is higher or lower or spot on. So, try it in ImtOS!
+
+## Log-11, Hackatime Coding Session: 33Minutes
+
+![12](assets/Readme/12.png)
+
+Here we go again with the **Tic Tac Toe** game. This is a tough one cause the cpu will always do the best move but there's also a plus point for the player coz the player will always do the first move.
+
+## Log-12, Hackatime Coding Session: 56Minutes
+
+![13](assets/Readme/13.png)
+
+Now, you can find me through my own made OS!
+Pretty funny and interesting at the same time, taina? Well, it's cool too.
+

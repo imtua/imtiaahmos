@@ -1,5 +1,5 @@
 window.initWidgetsApp = function () {
-    const widgetsHTML = `
+  const widgetsHTML = `
     <div class="widgets-container">
       <div class="widget-card clock-card">
         <div class="widget-label">TIME & DATE</div>
@@ -36,41 +36,41 @@ window.initWidgetsApp = function () {
     </div>
   `;
 
-    wm.createWindow('widgets', 'System Widgets Hub', widgetsHTML, { width: '680px', height: '460px' });
+  wm.createWindow('widgets', 'System Widgets Hub', widgetsHTML, { width: '680px', height: '460px' });
 
-    setTimeout(() => {
-        const bigTime = document.getElementById('widget-big-time');
-        const fullDate = document.getElementById('widget-full-date');
-        const memo = document.getElementById('widget-memo');
-        const cpuBar = document.getElementById('cpu-bar');
-        const cpuPct = document.getElementById('cpu-pct');
-        const ramBar = document.getElementById('ram-bar');
-        const ramPct = document.getElementById('ram-pct');
+  setTimeout(() => {
+    const bigTime = document.getElementById('widget-big-time');
+    const fullDate = document.getElementById('widget-full-date');
+    const memo = document.getElementById('widget-memo');
+    const cpuBar = document.getElementById('cpu-bar');
+    const cpuPct = document.getElementById('cpu-pct');
+    const ramBar = document.getElementById('ram-bar');
+    const ramPct = document.getElementById('ram-pct');
 
-        function updateWidgetTime() {
-            const now = new Date();
-            if (bigTime) bigTime.textContent = now.toLocaleTimeString();
-            if (fullDate) fullDate.textContent = now.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-        }
-        updateWidgetTime();
-        const timeInterval = setInterval(updateWidgetTime, 1000);
+    function updateWidgetTime() {
+      const now = new Date();
+      if (bigTime) bigTime.textContent = now.toLocaleTimeString();
+      if (fullDate) fullDate.textContent = now.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    updateWidgetTime();
+    const timeInterval = setInterval(updateWidgetTime, 1000);
 
-        if (memo) {
-            memo.value = localStorage.getItem('imtos_quick_memo') || '';
-            memo.addEventListener('input', () => {
-                localStorage.setItem('imtos_quick_memo', memo.value);
-            });
-        }
+    if (memo) {
+      memo.value = localStorage.getItem('imtos_quick_memo') || '';
+      memo.addEventListener('input', () => {
+        localStorage.setItem('imtos_quick_memo', memo.value);
+      });
+    }
 
-        const statsInterval = setInterval(() => {
-            if (!cpuBar) return;
-            const randomCpu = Math.floor(Math.random() * 25) + 15;
-            const randomRam = Math.floor(Math.random() * 10) + 40;
-            cpuBar.style.width = randomCpu + '%';
-            if (cpuPct) cpuPct.textContent = randomCpu + '%';
-            ramBar.style.width = randomRam + '%';
-            if (ramPct) ramPct.textContent = randomRam + '%';
-        }, 2500);
+    const statsInterval = setInterval(() => {
+      if (!cpuBar) return;
+      const randomCpu = Math.floor(Math.random() * 25) + 15;
+      const randomRam = Math.floor(Math.random() * 10) + 40;
+      cpuBar.style.width = randomCpu + '%';
+      if (cpuPct) cpuPct.textContent = randomCpu + '%';
+      ramBar.style.width = randomRam + '%';
+      if (ramPct) ramPct.textContent = randomRam + '%';
+    }, 2500);
 
-    }, 100);
+  }, 100);
 };

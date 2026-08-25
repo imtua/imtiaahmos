@@ -1,10 +1,10 @@
 window.initGuessNumberApp = function () {
-    let secretNumber = Math.floor(Math.random() * 100) + 1;
-    let remainingAttempts = 10;
-    let gameOver = false;
-    let history = [];
+  let secretNumber = Math.floor(Math.random() * 100) + 1;
+  let remainingAttempts = 10;
+  let gameOver = false;
+  let history = [];
 
-    const gameHTML = `
+  const gameHTML = `
     <div class="gn-container">
       <div class="gn-header">
         <span class="gn-badge">Chances Left: <strong id="gn-attempts">10</strong>/10</span>
@@ -29,80 +29,80 @@ window.initGuessNumberApp = function () {
     </div>
   `;
 
-    wm.createWindow('guessnumber', 'Guess The Number', gameHTML, { width: '420px', height: '430px' });
+  wm.createWindow('guessnumber', 'Guess The Number', gameHTML, { width: '420px', height: '430px' });
 
-    setTimeout(() => {
-        const form = document.getElementById('gn-form');
-        const input = document.getElementById('gn-input');
-        const feedback = document.getElementById('gn-feedback');
-        const attemptsEl = document.getElementById('gn-attempts');
-        const historyTags = document.getElementById('gn-history-tags');
-        const resetBtn = document.getElementById('gn-reset-btn');
+  setTimeout(() => {
+    const form = document.getElementById('gn-form');
+    const input = document.getElementById('gn-input');
+    const feedback = document.getElementById('gn-feedback');
+    const attemptsEl = document.getElementById('gn-attempts');
+    const historyTags = document.getElementById('gn-history-tags');
+    const resetBtn = document.getElementById('gn-reset-btn');
 
-        if (!form) return;
+    if (!form) return;
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (gameOver) return;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (gameOver) return;
 
-            const guess = parseInt(input.value.trim(), 10);
-            if (isNaN(guess) || guess < 1 || guess > 100) return;
+      const guess = parseInt(input.value.trim(), 10);
+      if (isNaN(guess) || guess < 1 || guess > 100) return;
 
-            input.value = '';
-            remainingAttempts--;
-            attemptsEl.textContent = remainingAttempts;
+      input.value = '';
+      remainingAttempts--;
+      attemptsEl.textContent = remainingAttempts;
 
-            if (guess === secretNumber) {
-                feedback.className = 'gn-feedback-box success';
-                feedback.innerHTML = `🎉 <strong>SPOT ON!</strong> You guessed <strong>${secretNumber}</strong> correctly!`;
-                endGame(true);
-                addHistoryTag(guess, 'correct');
-                return;
-            }
+      if (guess === secretNumber) {
+        feedback.className = 'gn-feedback-box success';
+        feedback.innerHTML = `🎉 <strong>SPOT ON!</strong> You guessed <strong>${secretNumber}</strong> correctly!`;
+        endGame(true);
+        addHistoryTag(guess, 'correct');
+        return;
+      }
 
-            const hint = guess < secretNumber ? 'HIGHER ⬆️' : 'LOWER ⬇️';
-            const hintClass = guess < secretNumber ? 'higher' : 'lower';
-            addHistoryTag(guess, hintClass);
+      const hint = guess < secretNumber ? 'HIGHER ⬆️' : 'LOWER ⬇️';
+      const hintClass = guess < secretNumber ? 'higher' : 'lower';
+      addHistoryTag(guess, hintClass);
 
-            if (remainingAttempts <= 0) {
-                feedback.className = 'gn-feedback-box danger';
-                feedback.innerHTML = `💀 <strong>Game Over!</strong> The secret number was <strong>${secretNumber}</strong>.`;
-                endGame(false);
-            } else {
-                feedback.className = `gn-feedback-box ${hintClass}`;
-                feedback.innerHTML = `Go <strong>${hint}</strong> than ${guess}!`;
-            }
-        });
+      if (remainingAttempts <= 0) {
+        feedback.className = 'gn-feedback-box danger';
+        feedback.innerHTML = `💀 <strong>Game Over!</strong> The secret number was <strong>${secretNumber}</strong>.`;
+        endGame(false);
+      } else {
+        feedback.className = `gn-feedback-box ${hintClass}`;
+        feedback.innerHTML = `Go <strong>${hint}</strong> than ${guess}!`;
+      }
+    });
 
-        resetBtn.addEventListener('click', () => {
-            secretNumber = Math.floor(Math.random() * 100) + 1;
-            remainingAttempts = 10;
-            gameOver = false;
-            history = [];
+    resetBtn.addEventListener('click', () => {
+      secretNumber = Math.floor(Math.random() * 100) + 1;
+      remainingAttempts = 10;
+      gameOver = false;
+      history = [];
 
-            attemptsEl.textContent = '10';
-            feedback.className = 'gn-feedback-box';
-            feedback.innerHTML = 'Guess a number between <strong>1</strong> and <strong>100</strong>!';
-            historyTags.innerHTML = '<span class="gn-empty-hint">No guesses yet</span>';
-            input.disabled = false;
-            document.getElementById('gn-submit-btn').disabled = false;
-            input.focus();
-        });
+      attemptsEl.textContent = '10';
+      feedback.className = 'gn-feedback-box';
+      feedback.innerHTML = 'Guess a number between <strong>1</strong> and <strong>100</strong>!';
+      historyTags.innerHTML = '<span class="gn-empty-hint">No guesses yet</span>';
+      input.disabled = false;
+      document.getElementById('gn-submit-btn').disabled = false;
+      input.focus();
+    });
 
-        function endGame(isWin) {
-            gameOver = true;
-            input.disabled = true;
-            document.getElementById('gn-submit-btn').disabled = true;
-        }
+    function endGame(isWin) {
+      gameOver = true;
+      input.disabled = true;
+      document.getElementById('gn-submit-btn').disabled = true;
+    }
 
-        function addHistoryTag(num, type) {
-            if (history.length === 0) historyTags.innerHTML = '';
-            history.push(num);
+    function addHistoryTag(num, type) {
+      if (history.length === 0) historyTags.innerHTML = '';
+      history.push(num);
 
-            const tag = document.createElement('span');
-            tag.className = `gn-tag ${type}`;
-            tag.textContent = num;
-            historyTags.appendChild(tag);
-        }
-    }, 100);
+      const tag = document.createElement('span');
+      tag.className = `gn-tag ${type}`;
+      tag.textContent = num;
+      historyTags.appendChild(tag);
+    }
+  }, 100);
 };

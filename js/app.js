@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Live Clock
     function updateClock() {
         const now = new Date();
         const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClock();
     setInterval(updateClock, 1000);
 
-    // 2. Dock Click Listeners
     document.querySelectorAll('.dock-item').forEach(item => {
         item.addEventListener('click', () => {
             const appType = item.getAttribute('data-app');
@@ -40,11 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof window.initWidgetsApp === 'function') {
                     window.initWidgetsApp();
                 }
+            } else if (appType === 'contact') {
+                if (typeof window.initContactApp === 'function') {
+                    window.initContactApp();
+                } else {
+                    console.error('initContactApp function not found! Check script order.');
+                }
             }
         });
     });
-
-    // 3. Menu
 
     const launcherBtn = document.getElementById('app-launcher-btn');
     const appMenu = document.getElementById('app-menu');
